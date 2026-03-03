@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My CSS Styling Experiment</title>
+
+    <!-- Internal CSS -->
+    <style>
+        /* Box style for every line */
+        .box {
+            border: 2px solid black;
+            padding: 15px;
+            margin: 15px;
+            border-radius: 8px;
+            background-color: #f2f2f2;
+        }
+
+        /* Class selector */
+        .highlight {
+            background-color: white; 
+            font-weight: bold;                
+        }
+
+        /* ID selector */
+        #profileBox {
+            background-color: darkblue;            
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="box">My Student Profile</h1>
+
+    <!-- Class selector -->
+    <p class="highlight box">
+        Hello, I am experimenting with CSS styles.
+    </p>
+
+    <!-- ID selector -->
+    <div id="profileBox" class="box">
+        <p class="box">Name: Shaik Mohammad Suhail</p>
+        <p class="box">Course: Cybersecurity and DSA with Python</p>
+    </div>
+
+    <!-- Inline CSS -->
+    <p class="box" style="color: red; font-size: 18px;">
+        This line is styled using inline CSS.
+    </p>
+
+</body>
+</html>
