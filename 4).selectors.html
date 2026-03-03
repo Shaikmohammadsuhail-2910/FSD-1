@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Canteen Menu</title>
+
+    <style>
+
+        /* -------- Simple Selectors -------- */
+
+        /* Universal selector */
+        * {
+            font-family: Arial;
+        }
+
+        /* Element selector */
+        h1 {
+            color: darkred;
+        }
+
+        /* ID selector */
+        #menuBox {
+            border: 2px solid black;
+            padding: 15px;
+            margin: 10px;
+        }
+
+        /* Class selector */
+        .price {
+            color: green;
+            font-weight: bold;
+        }
+
+        /* Group selector */
+        h2, h3 {
+            color: blue;
+        }
+
+        /* -------- Combinator Selectors -------- */
+
+        /* Descendant selector */
+        #menuBox p {
+            background-color: #f2f2f2;
+            padding: 5px;
+        }
+
+        /* Child selector */
+        #menuBox > h2 {
+            text-decoration: underline;
+        }
+
+        /* Adjacent sibling selector */
+        h2 + p {
+            background-color: lightyellow;
+        }
+
+        /* General sibling selector */
+        h3 ~ p {
+            color: purple;
+        }
+
+        /* -------- Pseudo-class -------- */
+
+        a:hover {
+            color: orange;
+        }
+
+        /* -------- Pseudo-element -------- */
+
+        p::first-letter {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* -------- Attribute Selector -------- */
+
+        input[type="number"] {
+            border: 2px solid red;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>College Canteen Menu</h1>
+
+    <div id="menuBox">
+
+        <h2>Snacks</h2>
+        <p>Samosa - <span class="price">₹15</span></p>
+        <p>Sandwich - <span class="price">₹30</span></p>
+
+        <h3>Drinks</h3>
+        <p>Tea - <span class="price">₹10</span></p>
+        <p>Coffee - <span class="price">₹20</span></p>
+
+    </div>
+
+    <br>
+
+    <a href="#">Click here for today's special offers</a>
+
+    <br><br>
+
+    Enter Quantity:
+    <input type="number">
+
+</body>
+</html>
