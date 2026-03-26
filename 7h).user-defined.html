@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Defined Object</title>
+</head>
+<body>
+
+<h2>Student Details</h2>
+<p id="output"></p>
+
+<script>
+function Student(name, age) {
+    this.name = name;
+    this.age = age;
+
+    this.display = function() {
+        return this.name + " is " + this.age + " years old";
+    };
+}
+
+let s1 = new Student("Suhail", 19);
+
+// Accessor
+Object.defineProperty(s1, "info", {
+    get: function() {
+        return this.name + " - " + this.age;
+    }
+});
+
+window.onload = function() {
+    let result =
+        s1.display() + "<br>" +
+        s1.info;
+
+    document.getElementById("output").innerHTML = result;
+};
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date Example</title>
+</head>
+<body>
+
+<h2>Date Output</h2>
+<p id="output"></p>
+
+<script>
+window.onload = function() {
+    let today = new Date();
+
+    let result =
+        "Day: " + today.getDate() + "<br>" +
+        "Month: " + (today.getMonth() + 1) + "<br>" +
+        "Year: " + today.getFullYear();
+
+    document.getElementById("output").innerHTML = result;
+};
+</script>
+
+</body>
+</html>

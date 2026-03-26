@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Example</title>
+</head>
+<body>
+
+<h2>String Output</h2>
+<p id="output"></p>
+
+<script>
+window.onload = function() {
+    let text = "Hello World";
+
+    let result =
+        "Length: " + text.length + "<br>" +
+        "Uppercase: " + text.toUpperCase() + "<br>" +
+        "Substring: " + text.substring(0, 5);
+
+    document.getElementById("output").innerHTML = result;
+};
+</script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="output"></div>
+
+<script>
+let obj = {name:"John", age:25, city:"NY"};
+let out = "";
+
+// for-in
+for (let k in obj) out += k + ": " + obj[k] + "<br>";
+
+out += "<br>";
+
+// forEach
+Object.entries(obj).forEach(i => out += i[0] + ": " + i[1] + "<br>");
+
+out += "<br>";
+
+// for-of
+for (let [k,v] of Object.entries(obj)) out += k + ": " + v + "<br>";
+
+document.getElementById("output").innerHTML = out;
+</script>
+
+</body>
+</html>

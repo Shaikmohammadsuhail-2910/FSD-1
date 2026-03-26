@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Armstrong Number Program</title>
+</head>
+<body>
+
+    <h2>Check Armstrong Number</h2>
+
+    <script>
+
+        // Taking input from user
+        var num = parseInt(prompt("Enter a number:"));
+        var originalNum = num;
+        var sum = 0;
+        var remainder;
+
+        while (num > 0) {
+            remainder = num % 10;              // Getting last digit
+            sum = sum + (remainder * remainder * remainder); 
+            num = parseInt(num / 10);          // Removing last digit
+        }
+
+        if (sum == originalNum) {
+            document.write(originalNum + " is an Armstrong Number");
+        } else {
+            document.write(originalNum + " is NOT an Armstrong Number");
+        }
+
+    </script>
+
+</body>
+</html>

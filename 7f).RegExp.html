@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>RegExp Output</h2>
+<p id="output"></p>
+
+<script>
+let pattern = /hello/i;
+let text = "Hello World";
+
+let result1 = pattern.test(text);
+let result2 = text.match(pattern);
+
+document.getElementById("output").innerHTML =
+    "Test Result: " + result1 + "<br>" +
+    "Match Result: " + result2;
+</script>
+
+</body>
+</html>

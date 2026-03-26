@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Bank Denomination</h3>
+
+<input type="number" id="amt" placeholder="Enter amount">
+<button onclick="calc()">Show</button>
+
+<p id="res"></p>
+
+<script>
+function calc() {
+    let amt = document.getElementById("amt").value;
+    let den = [100,50,20,10,5,2,1];
+    let out = "";
+
+    for (let d of den) {
+        let count = Math.floor(amt / d);
+        if (count > 0) {
+            out += count + " - " + d + "'s, ";
+            amt %= d;
+        }
+    }
+
+    document.getElementById("res").innerHTML = out;
+}
+</script>
+
+</body>
+</html>
